@@ -1,0 +1,19 @@
+{
+  "name": "obs-zoom-to-mouse-remote",
+  "version": "1.0.0",
+  "description": "A small udp socket client designed to send the mouse position to obs-zoom-to-mouse over the network",
+  "author": "BlankSourceCode",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+      "package": "pkg package.json"
+  },
+  "bin": "src/server.js",
+  "pkg": {
+      "outputPath": "dist"
+  },
+  "dependencies": {    
+    "commander": "11.1.0",
+    "koffi": "2.6.10"
+  }
+}
