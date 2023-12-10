@@ -974,9 +974,6 @@ function M.find_first_address(host, service, options)
     end
 
     for _, v in ipairs(addrinfo) do
-        print("looking...")
-        print(format_table(v))
-        print(v:get_ip())
         if v.family == info.family and v.socket_type == info.socket_type and v.protocol == info.protocol then
             return v
         end
